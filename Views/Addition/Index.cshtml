@@ -1,0 +1,25 @@
+﻿@model CorePrcatice1.Models.Number
+
+<h1>Addition of two numbers</h1>
+@{
+    if (@ViewBag.Result != null)
+    {
+        @ViewBag.Result
+        ;
+    }
+    else
+    {
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            @Html.LabelFor(x => x.number1)
+            @Html.EditorFor(x => x.number1)
+
+            @Html.LabelFor(x => x.number2)
+            @Html.EditorFor(x => x.number2)
+
+            <button type="submit">Add</button>
+
+        }
+    }
+
+}
