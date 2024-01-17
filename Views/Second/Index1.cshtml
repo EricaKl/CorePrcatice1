@@ -1,0 +1,22 @@
+﻿<h1>Employees Data</h1>
+<table class ="table-bordered" style="border:double; width:100%">
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Designation</th>
+        
+    </tr>
+
+    @foreach(var item in ViewBag.Employees)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Department</td>
+            <td>@item.Designation</td>
+        </tr>
+       
+        
+    }
+</table>
