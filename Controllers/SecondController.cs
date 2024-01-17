@@ -22,7 +22,8 @@ namespace CorePrcatice1.Controllers
         }
         public IActionResult Index2()
         {
-            return View();
+            Employee emp = new Employee(){Id=1, Name="Erica", Department="Computer Science" };
+            return View(emp);
         }
         public IActionResult Index3()
         {
